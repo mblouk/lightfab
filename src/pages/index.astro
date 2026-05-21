@@ -1,0 +1,137 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import Hero from '@components/Hero.astro'
+import Feature from '@components/Feature.astro'
+import Counter from '@components/Counter.astro'
+import ContentMedia from '@components/ContentMedia.astro'
+import FeaturedProjects from '@components/FeaturedProjects.astro'
+import FeaturedPosts from '@components/FeaturedPosts.astro'
+import { Accordion, AccordionItem, Avatar, AvatarGroup, Badge, Heading, Link } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout title="Home- Lightfab" useTitleTemplate={false}>
+  <Hero>
+  <span class="text-gradient">Lightfab</span> Thematic semester 2027
+  </Hero>
+  <section class="my-64">
+    <div class="container">
+      <Heading id="learn-more" level="h2" class="mb-8">Light-driven fabrication: <br> additive technologies enabled by and for photonics</Heading>
+      <p class="text-2xl">
+        LIGHTFAB is a project funded by <Link href="https://univ-cotedazur.fr/recherche-innovation/structures-de-recherche/academies-dexcellence/academie-2/a-propos/lacademie-systemes-complexes" isExternal>Complex Systems Academy of Excellence</Link> at the <Link href="https://univ-cotedazur.fr/" isExternal>Université Côte d'Azur</Link> in the framework of the IdEx program. It seeks to unite ongoing research initiatives within UniCA that intersect additive manufacturing, materials science, chemistry, and photonics, while integrating the expertise of external collaborators from France and abroad. By fostering interdisciplinary exchange through internships, scientific visits, and dedicated events, the initiative aims to strengthen cross-disciplinary collaboration and visibility.
+      </p><br>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="lucide:boxes" title="Interdisciplinary collaborations">
+          Bring together expert scientists, young researchers, and engineers from academia and industry who work at the forefront of materials science, additive manufacturing and photonics.
+        </Feature>
+        <Feature icon="lucide:arrow-right-left" title="Dual approach">
+          Advanced photonics drives fabrication, and additive manufacturing, in turn, accelerates the evolution of photonics itself.
+        </Feature>
+        <Feature icon="lucide:layout-list" title="Various topics">
+          Advanced light shaping for nanoscale structuring in polymers to mesoscale sintering of metals and localized melting of glass. <a href="/lightfab/topics">More info</a>.
+        </Feature>
+      </div>
+    </div>
+  </section>
+  <section class="my-64">
+    <div class="container">
+      <Heading id="actions" level="h2" class="mb-8">Actions</Heading>
+      <p class="text-2xl">
+        The initiative will be hold in the Nice area during the first semester 2027, from mid-January to mid-July.
+      </p><br>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="lucide:graduation-cap" title="Training internships">
+          Five Master’s-level internships of five to six months each. Every project will be jointly supervised across two disciplines or institutions, and, where possible, involve an industrial partner.<br>
+          <a href="/lightfab/internships">More info</a>.<br><br>
+          <Link href="/lightfab/internships" isButton type="primary" size="md">Call for proposals now open</Link> 
+        </Feature>
+        <Feature icon="lucide:microscope" title="Visiting researchers">
+          Five awards to support short term visits from established researchers. PhD and postdocs can also benefit from LIGHTFAB support to apply to dedicated calls.<br>
+          <a href="/lightfab/visits">More info</a>.<br><br>
+          <strong>The call for proposals will open soon (mid-September)</strong>.
+        </Feature>
+        <Feature icon="lucide:calendar" title="Scientific events">
+          A summer school and a conference will be organized.<br>
+          <a href="/lightfab/events">More info</a>.<br><br>
+          <strong>Location and dates will be announced soon.</strong>
+        </Feature>
+      </div>
+    </div>
+  </section>
+  <section class="my-64">
+    <div class="space-content container">
+      <Heading level="h2">Board composition</Heading>
+      <p class="text-2xl">
+        The initiative is designed to be inclusive and welcomes participation from any colleagues from academics and industry who want to get involved and contribute. Feel free to contact us if you want to join!
+      </p>
+      <Link href="/lightfab/contact" isButton type="secondary" animateOnHover animationType="boop">
+          <Icon aria-hidden="true" name="lucide:mail" size=" 1.5rem" />
+          Get in touch!
+        </Link>
+      <AvatarGroup display="grid" gridItemsSize="300px" gridGap="2rem">
+        <Avatar title="Christophe Bailet // OCA" subtitle="Optomechanics for astronomical instrumentation" />
+        <Avatar img="src/assets/img/mb_NB.png" title="Matthieu Bellec // INPHYNI" subtitle="Laser structuring and AM of glasses" />
+        <Avatar title="Mahmoud Elsawy // INRIA" subtitle="Numerical simulation of photonic systems and AM" />
+        <Avatar title="Karim Inal // CEMEF" subtitle="Mesocale AM sintering of metals " />
+        <Avatar title="Samira Khadir // CRHEA" subtitle="Nanofabrication of photonic metasurfaces" />
+        <Avatar title="Arnaud Zenerino // IMREDD" subtitle="Additive manufacturing" />
+      </AvatarGroup>
+    </div>
+  </section>
+  <section class="my-64">
+    <div class="container grid grid-cols-1 gap-12 md:grid-cols-2">
+      <div class="flex flex-col items-start gap-4">
+        <Heading id="faq" level="h2">FAQ</Heading>
+        <p class="text-2xl">
+          Here are answers to some of the most frequently asked questions regarding the calls for proposals, including important information about eligibility, submission procedures, deadlines, and the selection process. If something is not clear and if you have any further question, feel free to contact us!
+        </p>
+        <Link href="/lightfab/contact" isButton type="primary" animateOnHover animationType="boop">
+          <Icon aria-hidden="true" name="lucide:headset" size=" 1.5rem" />
+          Contact us!
+        </Link>
+      </div>
+      <div class="space-content">
+        <Accordion>
+          <AccordionItem name="exclusive" title="When is the submission deadline?" open>
+            <p>
+              All proposals must be submitted by October. Late submissions may not be considered, so applicants are encouraged to submit early.
+            </p>
+          </AccordionItem>
+          <AccordionItem name="exclusive" title="Where should proposals be submitted?">
+            <p>
+              Proposals should be submitted through email. Detailed submission instructions can be found in the call for proposals documentation.
+            </p>
+          </AccordionItem>
+          <AccordionItem name="exclusive" title="Who is eligible to apply?">
+            <p>
+              The call for proposals is open to blabla. Applicants should review the eligibility criteria carefully before preparing their submission.
+            </p>
+          </AccordionItem>
+          <AccordionItem name="exclusive" title="When will applicants be notified of the results?">
+            <p>
+              Applicants will be informed of the selection results by 2027. Notifications will be sent via email to the contact information provided in the proposal.
+            </p>
+          </AccordionItem>
+        </Accordion>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style>
+  .avatar {
+    border: 1px solid var(--border-color-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-s);
+  }
+  .text-gradient {
+    background: linear-gradient(
+      315deg,
+      light-dark(var(--color-primary-300), var(--color-secondary-100)) 25%,
+      light-dark(var(--color-secondary-300), var(--color-primary-200))
+    );
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
