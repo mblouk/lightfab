@@ -39,8 +39,7 @@ const viteConfig = {
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
-  site: 'https://mblouk.github.io',
-  base: '/lightfab',
+  site: 'https://lightfab.univ-cotedazur.fr/',
   integrations: [compress(), icon(), mdx(), sitemap()],
   vite: enhanceConfigForWorkspace(viteConfig),
   env: {
