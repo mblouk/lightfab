@@ -52,7 +52,7 @@ const {
 
 // For social sharing, we need the full absolute URL
 // If image is an ImageMetadata object, use its src, otherwise treat as string path
-const imagePath = image ? (typeof image === 'string' ? image : image.src) : '/lightfab/social-preview-image.png'
+const imagePath = image ? (typeof image === 'string' ? image : image.src) : '/social-preview-image.png'
 const imageUrl = new URL(imagePath, Astro.site).href
 ---
 
@@ -63,7 +63,7 @@ const imageUrl = new URL(imagePath, Astro.site).href
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- favicon -->
-    <link rel="icon" type="image/svg+xml" href="/lightfab/favicon-lightfab.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-lightfab.svg" />
 
     <!-- theme colors from config -->
     <style

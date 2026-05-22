@@ -25,12 +25,12 @@ export default defineThemeConfig({
       {
         type: 'link',
         label: 'Home',
-        href: '/lightfab/',
+        href: '/',
       },
       {
         type: 'link',
         label: 'Topics',
-        href: '/lightfab/topics',
+        href: '/topics',
       },
       {
         label: 'Actions',
@@ -38,27 +38,27 @@ export default defineThemeConfig({
         items: [
           {
             label: 'Master Internships',
-            href: '/lightfab/internships',
+            href: '/internships',
           },
           {
             label: 'Short Term Visits',
-            href: '/lightfab/visits',
+            href: '/visits',
           },
           {
             label: 'Events',
-            href: '/lightfab/events',
+            href: '/events',
           },
         ],
       },
       {
         type: 'link',
         label: 'Portfolio',
-        href: '/lightfab/portfolio',
+        href: '/portfolio',
       },
       {
         type: 'link',
         label: 'Contact',
-        href: '/lightfab/contact',
+        href: '/contact',
       },
     ],
   },

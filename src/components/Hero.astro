@@ -15,7 +15,7 @@ interface Props {
   src?: string
 }
 
-const { src = '/lightfab/illus-lightfab-3.webp' }: Props = Astro.props
+const { src = '/illus-lightfab-3.webp' }: Props = Astro.props
 ---
 
 <section class="hero my-24">
@@ -27,7 +27,7 @@ const { src = '/lightfab/illus-lightfab-3.webp' }: Props = Astro.props
         </h1>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <Link
-            href="/lightfab/#learn-more"
+            href="/#learn-more"
             isButton
             type="primary"
             animateOnHover
@@ -37,7 +37,7 @@ const { src = '/lightfab/illus-lightfab-3.webp' }: Props = Astro.props
             Learn More
           </Link>
           <Link
-            href="/lightfab/#actions"
+            href="/#actions"
             isButton
             type="secondary"
             animateOnHover
