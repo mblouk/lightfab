@@ -52,7 +52,7 @@ export default defineThemeConfig({
       },
       {
         type: 'link',
-        label: 'Portfolio',
+        label: 'Projects',
         href: '/portfolio',
       },
       {
