@@ -50,11 +50,11 @@ export default defineThemeConfig({
           },
         ],
       },
-      {
-        type: 'link',
-        label: 'Projects',
-        href: '/portfolio',
-      },
+      // {
+      //   type: 'link',
+      //   label: 'Projects',
+      //   href: '/portfolio',
+      // },
       {
         type: 'link',
         label: 'Contact',
