@@ -1,6 +1,6 @@
 import { defineThemeConfig } from '@utils/defineThemeConfig'
 import previewImage from '@assets/img/social-preview-image.png'
-import logoImage from '@assets/img/logo-lightfab-2.svg'
+import logoImage from '@assets/img/logo-lightfab.svg'
 
 export default defineThemeConfig({
   name: 'Lightfab',
